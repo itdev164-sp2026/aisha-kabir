@@ -7,7 +7,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   return new Promise((resolve, reject) => {
     graphql(` 
-    {
+      {
         allContentfulBlogPost {
           edges {
             node {
